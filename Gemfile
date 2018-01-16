@@ -1,6 +1,14 @@
 source "https://rubygems.org"
 
-git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+gem 'rails', '~> 5.1.4'
+group :development, :test do
+  gem 'listen'
+  gem 'mysql2'
+end
+
+group :production do
+
+end
 
 # Specify your gem's dependencies in scenery.gemspec
 gemspec
