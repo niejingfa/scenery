@@ -1,7 +1,9 @@
 source "https://rubygems.org"
 
 gem 'rails', '~> 5.1.4'
-gem 'puma'
+gem 'redis', '~> 4.0.1'
+
+gem 'puma', '~> 3.11.0'
 
 group :development, :test do
   gem 'listen'
